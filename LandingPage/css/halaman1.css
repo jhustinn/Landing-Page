@@ -56,6 +56,28 @@ body {
   scale: 1.04;
 }
 
+#logo .container h1 img {
+  animation: float 6s ease-in-out infinite;
+  transform: translatey(0px);
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.9));
+}
+
+/* Keyframes */
+@keyframes float {
+  0% {
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.9));
+    transform: translatey(0px);
+  }
+  50% {
+    filter: drop-shadow(0 25px 10px rgba(0, 0, 0, 0.5));
+    transform: translatey(-20px);
+  }
+  100% {
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.9));
+    transform: translatey(0px);
+  }
+}
+
 @media screen and (max-width: 576px) {
   .container {
     display: flex;

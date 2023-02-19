@@ -1,0 +1,132 @@
+/* Dashboard */
+body {
+  height: 4600px;
+}
+
+#halaman5 {
+  padding-bottom: 50px;
+}
+
+#halaman5 p a {
+  color: greenyellow;
+}
+
+#halaman5 p a:hover {
+  color: rgb(218, 252, 167);
+}
+
+/* FOOTER */
+
+#footer p a {
+  color: greenyellow;
+  text-decoration: none;
+}
+
+#footer p a:hover {
+  color: rgb(218, 252, 167);
+}
+
+#footer p a:hover::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  width: 20px;
+  height: 3px;
+  background-color: antiquewhite;
+}
+
+#footer {
+  border-radius: 20px;
+  margin-left: 16%;
+  width: 70%;
+  padding-top: 10px;
+}
+
+.container p {
+  font-size: larger;
+  font-weight: 600;
+}
+
+#halaman5 img {
+  transition: all 0.3s;
+  filter: drop-shadow(0px 0px 10px #00000096);
+}
+
+#halaman5 img:hover {
+  scale: 1.04;
+}
+
+#logo .container h1 img {
+  animation: float 6s ease-in-out infinite;
+  transform: translatey(0px);
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.9));
+}
+
+/* Keyframes */
+@keyframes float {
+  0% {
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.9));
+    transform: translatey(0px);
+  }
+  50% {
+    filter: drop-shadow(0 25px 10px rgba(0, 0, 0, 0.5));
+    transform: translatey(-20px);
+  }
+  100% {
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.9));
+    transform: translatey(0px);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .header-box h1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  #logo .container h1 img {
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  #logo .container {
+    margin-bottom: 30px;
+  }
+
+  #logo .container h1 span {
+    margin-left: 60px;
+  }
+
+  #halaman3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #halaman3 img {
+    height: 115px;
+  }
+
+  #halaman3 .container {
+    width: 95%;
+  }
+
+  #halaman4 .container .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  #halaman4 .container .col-4 {
+    margin-left: 150px;
+    margin-bottom: 20px;
+    display: flex;
+  }
+}
